@@ -1,0 +1,41 @@
+{% extends 'index_base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+</head>
+<div class="title">
+    <h1><center>CHAT ROOMS</center></h1>
+</div>
+<body>
+    
+    
+        <form method="POST" action="check" id="form" >
+            {% csrf_token %}
+            <div class="container">
+                <div class="input">
+                    <label>Room</label>
+                    <input type="text" name='room'>
+                    <label>Username</label>
+                    <input type="text" name='username'>
+                </div>
+                <div class = "button">
+                    <input type="submit" onclick="myFunction()" value="Enter group!">
+                </div>     
+            </div>
+        </form>
+
+        <script>
+            function func() {
+              document.getElementById("form").reset();
+            }
+        </script>
+    
+</body>
+</html>
+{% endblock %}

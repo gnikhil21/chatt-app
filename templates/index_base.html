@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        
+        html, body { 
+            overflow: hidden;
+            width:100%;
+            height: 100%;
+            
+            background: peachpuff;
+            font-family: Helvetica, Arial, sans-serif;
+          }
+        body,.container,.input,.button{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align: center;
+            flex-direction: column;
+          }
+
+        .title{
+            background-color:orangered;
+            width: 1800px;
+            height: 100px;
+            margin-top: -20px;
+            margin-bottom: 100px;
+            
+        }
+
+        .title h1{
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .container{
+            width:100%;
+            height:100%;
+            position:relative;
+            background: linear-gradient(to top , rgb(177, 177, 177),rgb(99, 98, 98));
+            box-shadow: 0px 0px 10px 1px black;
+            border-radius: 20px;
+            overflow:hidden;
+            box-sizing: border-box;
+            
+        }
+        
+        .input{
+            width:100%;
+            height:50%;
+            font-size: large;
+            
+        }
+        .input input{
+            width:50%;
+            height:100%;
+            margin:15px;
+            padding-bottom: 10px;
+            font-size:large;
+        }
+
+        
+
+        .button{
+            width:30%;
+            height:15%;
+            margin:10px;
+            background:red;
+        }
+        .button input{
+            width:100%;
+            height:100%;
+            background:linear-gradient(to bottom,rgb(146, 0, 0), rgb(255, 0, 0));
+            color:white;
+            font-size: medium;
+        }
+
+        form{
+            width:50%;
+            height:50%;
+            margin-bottom: 170px;   
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
